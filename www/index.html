@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+    $.MyMessage({texts:[{text:"Loading..."},{text:"Please wait..."},{text:"Call $.MyMessageClose() to close."},{text:"Do not close on click, and no hint."},],showhint:false,backgrounds:[{color:"#662d91"},{color:"#ec008c"},{color:"#f26522"},{color:"#39b54a"},]});$("#ReLaunch").on("click",function(a){$.MyMessage({texts:[{text:"Loading..."},{text:"Please wait..."},{text:"Call $.MyMessageClose() to close."},{text:"Do not close on click, and no hint."},],showhint:false,backgrounds:[{color:"#662d91"},{color:"#ec008c"},{color:"#f26522"},{color:"#39b54a"},]})});$("#Close").on("click",function(){$.MyMessageClose()});
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+            $.getJSON("http://findback.yyf.me/get/connect.php",function(result){
+                location.href='bin/main.html';
+            });
+    });
+</script>
+<div style="text-align:center;clear:both">
+</div>
+</body>
+
+</html>
